@@ -2,14 +2,53 @@
 $iconSpritePath: image-path('glyphicons-halflings.png');
 $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 
-$navbarBackground: #555;
-$navbarBackgroundHighlight: #000;
+$navbarBackground: #fff;
+$navbarBackgroundHighlight: yellow;
 $navbarLinkColor: #FFFFFF;
-$linkColor: #FFFFFF;
+$linkColor: brown;
 
 @import "bootstrap";
 
-body { padding-top: 60px; }
+body { 
+  padding-top: 60px; 
+  background:url('bee.jpg')
+ 
+}
+
+nav a {
+	padding: 0px 30px 0px 30px;
+}
+
+.container {
+	font-family: Happy Monkey;
+	width: 90%;
+	text-align: center;
+}
 
 @import "bootstrap-responsive";
 
+h2 {
+	color: brown;
+}
+
+
+
+#new_url_button {
+  border: 5px solid yellow;
+  background: #fff;
+  color: #e8e8e8;
+  font-weight: 400;
+  font-size: 1.4em; 
+  padding: 0px 8px 13px 8px;
+  box-shadow: 0px 2px 3px #555; 
+  border-radius: .2em;
+}
+
+
+.new_url #url_long {
+  height: 4em;
+	width: 40em;
+	box-shadow: 0px 2px 3px #555;
+	border: 5px solid yellow; 
+  border-radius: .5em;
+}

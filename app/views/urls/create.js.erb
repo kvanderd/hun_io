@@ -1,0 +1,6 @@
+$(function(){
+	$('#new_url').hide();
+	  $('#your_url').append('<%= j render(@url) %>').delay(7900).fadeOut('slow', function() {
+  	// this should show the form again
+  });
+});

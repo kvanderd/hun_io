@@ -1,5 +1,5 @@
 <div id="user_nav">
-	<%= link_to "home", root_path %>	
+	<%= link_to "Hunio", root_path %>	
 	<% if user_signed_in? %>
 		Signed in as <%= current_user.email %>. Not you?
 		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
