@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Bootstrapuser::Application.load_tasks
+Hunio::Application.load_tasks
