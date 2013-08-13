@@ -22,10 +22,13 @@
 					
 
 				<div class="span2">
-					<%= label_tag 'user[remember_me]', 'Remember Me' %>
-					<%= check_box_tag 'user[remember_me]' %>
-					</div>
-					<%= link_to "Password Lost?", new_password_path('user') %>
+					<div id="remember_me">
+						<%# label_tag 'user[remember_me]', 'Remember Me' %>
+						<%# check_box_tag 'user[remember_me]' %>
+				</div>
+				</div>
+						<%= link_to "Password Lost?", new_password_path('user') %>
+					
 					</div>
 				</div>
 				<% end %>
