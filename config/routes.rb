@@ -1,6 +1,7 @@
 Hunio::Application.routes.draw do
   devise_for :users
-  root :to => 'urls#index'
+  resources :users
+  root :to => 'urls#new'
   resources :urls
   # The priority is based upon order of creation:
   # first created -> highest priority.
