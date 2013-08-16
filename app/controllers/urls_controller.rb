@@ -7,6 +7,7 @@ class UrlsController < ApplicationController
 
   def new
   	@url = Url.new()
+    @last_5_urls = Url.last(5)
   end
 
   def create 

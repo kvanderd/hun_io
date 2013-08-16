@@ -11,7 +11,7 @@ $linkColor: brown;
 
 body { 
   padding-top: 80px; 
-  background:url('bee.jpg')
+  background:url('bee.jpg') no-repeat;
  
 }
 
@@ -86,4 +86,9 @@ h2 {
   display: inline-block;
   height: 50px;
   width: 100px;
+}
+
+
+#new_short_url {
+  font-size: 8em;
 }

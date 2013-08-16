@@ -2,3 +2,17 @@
   <div class="url" id="your_url">
 	  <%= render 'form' %>
 	</div>
+
+<div id="recent_urls">
+	<h2>Recent URLs</h2>
+<table border="1">
+	<td>Short URL</td>
+  <td>Long URL</td>
+	<% @last_5_urls.each do |url| %>
+	 <tr>
+		  <td><%= url.short %></td>
+		  <td><%= url.long %></td>
+		<tr>
+	<% end %>
+</table>
+</div>
