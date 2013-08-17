@@ -3,7 +3,9 @@
 		<div class="navbar-inner">
 			<span class="icon-bar"></span>
 			<div class="brand">
+				<div id="logo">
 				<%= link_to "Hunio", root_path %>
+			</div>
 			</div>
 			<% if current_user %>
 				<%= link_to "#{current_user.email}", user_path(current_user.id) %>

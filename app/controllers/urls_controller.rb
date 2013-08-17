@@ -13,9 +13,12 @@ class UrlsController < ApplicationController
 
   def create 
   	short = "http://hun.io/" + SecureRandom.hex(2)
-
-		@url = Url.create!(long: params[:url][:long], short: short)
-  
+    if current_user
+  		@url = Url.create!(long: params[:url][:long], short: short)
+      @url.update_attributes(user_id: current_user.id)
+    else
+      @url = Url.create!(long: params[:url][:long], short: short)
+    end
     respond_to do |format|
        format.html {redirect_to urls_url}
        format.js

@@ -7,6 +7,7 @@ $navbarBackgroundHighlight: #F2D6AF;
 $navbarLinkColor: #FFFFFF;
 $linkColor: brown;
 
+
 @import "bootstrap";
 
 body { 
@@ -15,11 +16,20 @@ body {
  
 }
 
+
+
+#logo a {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
 nav a {
 	padding: 0px 20px 0px 30px;
 }
 
-
+.navbar .btn {
+  margin-bottom: 1em
+}
 .navbar-inner {
     background:transparent;
 }
@@ -113,7 +123,6 @@ a {
 
  table td {
   border: .5em solid #fff;
-  
   
  }
 
