@@ -12,7 +12,7 @@ class UrlsController < ApplicationController
   end
 
   def create 
-  	short = "http://hun.io/" + SecureRandom.hex(2)
+  	short = "http://www.hun.io/" + SecureRandom.hex(2)
     if current_user
   		@url = Url.create!(long: params[:url][:long], short: short)
       @url.update_attributes(user_id: current_user.id)
