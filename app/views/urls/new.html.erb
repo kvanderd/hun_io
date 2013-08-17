@@ -1,18 +1,23 @@
-<h2>Shorten Your Url</h2>
+<h2 class="span8">Shorten Your Url</h2>
+<div class="span9">
   <div class="url" id="your_url">
 	  <%= render 'form' %>
 	</div>
-
+</div>
+<div class="span8">
 <div id="recent_urls">
 	<h2>Recent URLs</h2>
-<table border="1">
-	<td>Short URL</td>
-  <td>Long URL</td>
+<table>
+	<td><h3>Short URL</h3></td>
+  <td><h3>Long URL</h3></td>
 	<% @last_5_urls.each do |url| %>
 	 <tr>
-		  <td><%= url.short %></td>
+		  <td><%= link_to url.short, url_path(url.id) %></td>
 		  <td><%= url.long %></td>
-		<tr>
+	 </tr>
 	<% end %>
 </table>
 </div>
+</div>
+
+<div class="bees"></div>
