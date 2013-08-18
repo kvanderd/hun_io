@@ -27,8 +27,6 @@ class UrlsController < ApplicationController
   
   def show
     url = Url.find(params[:id])
-    puts "this is the url" * 70
-    ap url
     redirect_to url.long
   end
 
