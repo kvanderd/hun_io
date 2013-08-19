@@ -1,7 +1,6 @@
 class UrlsController < ApplicationController
 
   def index
-    p "I am in index" * 9
   	@url = Url.new()
     @last_urls = Url.last
   end
