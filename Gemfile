@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 
-
+gem 'simplecov', :require => false, :group => :test
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -44,6 +44,7 @@ group :test, :development do
   gem 'factory_girl_rails'
    #rspec test
   gem 'rspec-rails'
+  gem 'guard-rspec'
   #Capybara helps you test web applications by 
   # simulating how a real user would interact with your app.
   gem 'capybara'
